@@ -16,12 +16,9 @@ imgArray = document.getElementsByTagName("img");
 opacity = 0;
 imgArray[0].style.opacity ="0";
 
-var myVar = setInterval(function(){ myTimer() }, 100);
+var myVar = setInterval(function(){ myFadeOut() }, 100);
 
-function myTimer() {
-    var d = new Date();
-    var t = d.toLocaleTimeString();
-    document.getElementById("demo").innerHTML = t;
+function myFadeOut() {
       imgArray[0].style.opacity = ""+opacity;
       opacity += 0.1;
      if(opacity >= 1) {
