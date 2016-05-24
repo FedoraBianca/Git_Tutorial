@@ -24,11 +24,12 @@ function myTimer() {
     document.getElementById("demo").innerHTML = t;
       imgArray[0].style.opacity = ""+opacity;
       opacity += 0.1;
+     if(opacity >= 1) {
+         clearInterval(myVar);
+     }
 }
 
-if(opacity >= 1) {
-    clearInterval(myVar);
-}
+
 </script>
 
 </body>
